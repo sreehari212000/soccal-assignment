@@ -14,7 +14,7 @@ function App() {
     const [loading, setLoading] = useState(true)    
       
     const fetchFromAPI = async ()=>{
-        const URL = `http://www.omdbapi.com/?i=tt3896198&apikey=b2171778&type=${category}&s=${searchterm}`
+        const URL = `https://www.omdbapi.com/?i=tt3896198&apikey=b2171778&type=${category}&s=${searchterm}`
         const response = await fetch(URL)
         const result = await response.json()
         setLoading(false)      
